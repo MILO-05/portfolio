@@ -8,7 +8,9 @@
     <script src="{{ url_for('static', filename='client.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
-<body>
+<body style="margin: 0;">
+
+<!-- header -->
 <header>
     <h1><a href="#home-section">Diego Shevamilano</a></h1>
     
@@ -17,8 +19,21 @@
         <a href="#about-section">ABOUT ME</a>
         <a href="#portfolio-section">PORTOFOLIO</a>
         <a href="#skills-section">SKILLS</a>
-        <a href="#contact-section   ">CONTACT</a>
+        <a href="#contact-section">CONTACT</a>
     </nav>
 </header>
+
+<!-- home section -->
+<div style="background-color: blue;" id="home-section">
+    <div><p>Informatics Undergraduate Student at <strong><span>PRESIDENT</span> <span>UNIVERSITY</span></strong></p></div>
+    <div id="home-section-photo">
+        <div id="home-section-photo-left"><img src="{{ url_for('static', filename='images/dummy-pic.jpg') }}" alt="Self-photo"></div>
+        <div id="home-section-photo-right">
+            <img src="{{ url_for('static', filename='images/dummy-pic.jpg') }}" alt="">
+            <p>Picture is taken at [description]</p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

@@ -1,10 +1,18 @@
 body {
-    margin: 25px;
+    /* margin: 25px; */
     margin-top: 0;
+    width: 100vw;
 }
-h1 {
-    color: white;
+body > div {
+    padding: 25px;
 }
+
+/* Border guide */
+/* div, tr, th, td, nav, p {
+    border: 1px solid red;
+} */
+
+/* Header */
 #header-nav {
     display: flex;
     gap: 20px;
@@ -13,11 +21,38 @@ header {
     display: flex;
     background-color: black;
     width: 100%;
-    position: relative;
+    /* position: relative; */
     align-items: center;
     padding: 0 10px;
-    box-sizing: border-box  ;
-    left: -25px;
-    width: calc(100% + 50px);
+    box-sizing: border-box;
+    /* left: -25px; */
+    /* width: calc(100% + 50px); */
     justify-content: space-between;
+}
+
+/* Home Section */
+#home-section {
+    /* margin: 50px 0; */
+    /* width: 100%; */
+    height: 100vh;
+}
+#home-section-photo {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#home-section-photo-left img {
+    height: 45vh;
+    width: 30vw;
+}
+#home-section-photo-right img {
+    height: 80%;
+    width: 60%;
+}
+#home-section-photo-right p {
+    font-size: small;
+    text-align: center;
+    margin: 0;
+    width: 60%;
 }
