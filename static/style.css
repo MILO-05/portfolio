@@ -111,3 +111,29 @@ header {
 .psp-right {
     justify-content: end;
 }
+
+/* Skills Section */
+#skills-section {
+    /* margin: 50px 0; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    padding: 30px;
+    background-color: #BB6688;
+}
+.skills-section-competencies {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+#skills-section > .skills-section-competencies:last-child {
+    margin-bottom: 0;
+}
+.skills-section-competencies p {
+    margin: 25px 0 0 0;
+}
+.psp-left {
+    justify-content: space-between;
+}
+.psp-right {
+    justify-content: end;
+}
