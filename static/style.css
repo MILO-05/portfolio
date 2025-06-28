@@ -1,12 +1,19 @@
 
 :root {
-    --color-platinum-grey: #585456;
+    --blumine: #166884;
+    --cyan: #71DBDB;
+    --dark-purple: #884499;
+    --platinum: #E3DDE0;
+    --platinum-grey: #C4BEC1;
+    --color-platinum-dark: #585456;
+    --matte-black: #1C1B1C;
 }
 
 body {
     /* margin: 25px; */
     margin: 0;
     width: 100%;
+    background-color: blue;
 }
 body > div {
     padding: 25px;
@@ -29,11 +36,10 @@ div#header {
     padding: 10px;
     box-sizing: border-box;
     width: 100%;
-    background-color: blue;
 }
 header {
     display: flex;
-    background-color: var(--color-platinum-grey);
+    background-color: var(--platinum-dark);
     color: white;
     border-radius: 20px;
     align-items: center;
