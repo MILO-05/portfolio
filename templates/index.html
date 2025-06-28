@@ -13,7 +13,7 @@
 <!-- header -->
 <div id="header">
 <header>
-    <h1><a href="#home-section">Diego Shevamilano</a></h1>
+    <h1><a href="#home-section">DIEGO SHEVAMILANO</a></h1>
     
     <nav id="header-nav">
         <a href="#home-section">HOME</a>
@@ -27,10 +27,11 @@
 
 <!-- home section -->
 <div id="home-section">
-    <div><p>Informatics Undergraduate Student at <strong><span>PRESIDENT</span> <span>UNIVERSITY</span></strong></p></div>
-    <div id="home-section-photo">
-        <div id="home-section-photo-left"><img src="{{ url_for('static', filename='images/dummy-pic.jpg') }}" alt="Self-photo"></div>
-        <div id="home-section-photo-right">
+    <p id="small-about">Informatics Undergraduate Student at <strong><span style="color: #D61924;">PRESIDENT</span> <span style="color: #224D84;">UNIVERSITY</span></strong></p>
+    <div id="home-section-photo-divider">
+        <div class="home-section-photo" id="home-section-photo-left">
+            <img src="{{ url_for('static', filename='images/dummy-pic.jpg') }}" alt="Self-photo"></div>
+        <div class="home-section-photo" id="home-section-photo-right">
             <img src="{{ url_for('static', filename='images/dummy-pic.jpg') }}" alt="">
             <p>Picture is taken at [description]</p>
         </div>
