@@ -30,10 +30,10 @@
     <p id="small-about"><strong><span style="color: #D61924;">PRESIDENT</span> <span style="color: #224D84;">UNIVERSITY</span></strong> Informatics Undergraduate</p>
     <div id="home-section-photo-divider">
         <div class="home-section-photo" id="home-section-photo-left">
-            <img src="{{ url_for('static', filename='images/dummy-pic.jpg') }}" alt="Self-photo"></div>
+            <img style="height: 400px;" src="{{ url_for('static', filename='images/40139-775526.jpg') }}" alt="Self-photo"></div>
         <div class="home-section-photo" id="home-section-photo-right">
-            <img src="{{ url_for('static', filename='images/dummy-pic.jpg') }}" alt="">
-            <p>Picture is taken at [description]</p>
+            <img style="width: 600px; height: 340px;" src="{{ url_for('static', filename='images/WhatsApp Image 2025-06-23 at 18.06.54_aee5509a.jpg') }}" alt="">
+            <span style="text-align: center; margin-top: 5px; color: white; font-size: small;">President University Economic Survival Business Project Exhibition - 08/05/24</span>
         </div>
     </div>
 </div>
@@ -71,20 +71,20 @@
 
 <!-- portfolio section -->
 <div id="portfolio-section">
-    <h1>Past Projects</h1>
-    <div class="portfolio-section-project psp-left">
-        <img src="{{ url_for('static', filename='images/dummy-pic.jpg') }}" alt="">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-    </div>
-    <div class="portfolio-section-project psp-right">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <img src="{{ url_for('static', filename='images/dummy-pic.jpg') }}" alt="">
+    <h1 style="margin-bottom: 80px; text-align: center;">Past Projects</h1>
+    <div class="projects">
+        <h2 style="margin: 0 0 10 0;">President University Economic Survival Business Project</h2>
+        <div class="portfolio-section-project portfolio-section-project-multipic">
+            <div class="portfolio-section-project-multipic-img">
+                <img src="{{ url_for('static', filename='images/WhatsApp Image 2025-06-28 at 22.00.15_6ccda8b1.jpg') }}" alt="">
+                <img style="width: 840px;" src="{{ url_for('static', filename='images/WhatsApp Image 2025-06-28 at 22.00.16_e8183cb5.jpg') }}" alt="">
+            </div>
+            <div class="portfolio-section-project-description">
+                <p>
+                    PUNTEN is a fully functional mobile web application developed for the President University Economic Survival Business Project Competition 2024. This project won 1st place in the Application category
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 
