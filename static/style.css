@@ -115,7 +115,6 @@ header a:hover {
 #about-me > div {
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 #about-me p {
     margin: 0 0 15px 0;
