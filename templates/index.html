@@ -40,17 +40,20 @@
 
 <!-- about section -->
 <div id="about-section">
-    <div class="about-me">
-        <p>
-            I'm currently an Informatics undergraduate student at President University with a strong interest in web development and design. Through various team projects, I've gained valuable experience in key phases of the development process and learned the importance of effective teamwork.
-        </p>
-        <p>
-            I specialize in building interactive, intuitive, and user-friendly websites. I'm committed to continuously learning and improving my skills as I prepare for future opportunities in the tech industry. In addition, I have experience with UI/UX design, basic database management, and Git version control.
-        </p>
-        <p>
-            <!-- In addition, I have experience with UI/UX design, basic database management, and Git version control. -->
-        </p>
-        <!-- <img src="{{ url_for('static', filename='images/dummy-pic.jpg') }}" alt=""> -->
+    <div id="about-me">
+        <div>
+            <p>
+                I'm currently an Informatics undergraduate student at <strong><span style="color: #D61924;">President</span> <span style="color: #224D84;">University</span></strong> with a strong interest in <span style="color: var(--blumine)">web development</span> and <span style="color: var(--blumine)">design</span>.
+                Through various team projects, I've gained valuable experience in key phases of the development process and learned the importance of <span style="color: var(--blumine)">effective teamwork</span>.
+            </p>
+            <p>
+            I specialize in building <span style="color: var(--dark-purple)">interactive</span>, <span style="color: var(--dark-purple)">intuitive</span>, and <span style="color: var(--dark-purple)">user-friendly</span> websites.
+            I'm committed to continuously learning and improving my skills as I prepare for future opportunities in the tech industry. In addition, I have experience with <span style="color: var(--blumine)">UI/UX design</span>, <span style="color: var(--blumine)">basic database management</span>, and <span style="color: var(--blumine)">Git version control</span>.
+            </p>
+        </div>
+        <div>
+            <img style="height: 370px; width: 270px;" id="about-img" src="{{ url_for('static', filename='images/portfolio-picture1.jpg') }}" alt="">
+        </div>
     </div>
     <!-- skills section -->
     <div class="skills-section-competencies">
