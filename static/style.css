@@ -13,6 +13,7 @@ body {
     margin: 0;
     width: 100%;
     background-color: var(--matte-black);
+    font-family: 'Roboto', sans-serif;
 }
 body > div {
     padding: 25px;
@@ -73,6 +74,12 @@ header a {
 }
 header a:hover {
     text-decoration: underline;
+}
+#header-nav a {
+    transition: color 0.3s;
+}
+#header-nav a.active {
+    color: var(--cyan);
 }
 #header-nav {
     display: flex;
@@ -168,6 +175,7 @@ header a:hover {
 /* Portfolio Section */
 #portfolio-section {
     padding: 30px;
+    padding-bottom: 150px;
     background-color: var(--platinum-grey);
 }
 .projects {
@@ -193,6 +201,9 @@ header a:hover {
     flex-direction: column;
     margin: 0;
     gap: 10px;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.5;
 }
 #portfolio-section > .projects:last-child {
     margin-bottom: 0;
@@ -214,11 +225,20 @@ header a:hover {
     background-color: var(--platinum-grey);
 }
 #contact-section-container {
+    position: relative;
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 600px;
     gap: 30px;
+    transform: translateY(-50px);
+}
+.contact-sticky {
+    position: fixed;
+    top: 0;
+    width: 600px;
+    z-index: 1;
 }
 #contact-section-container img {
     width: 300px;
@@ -227,9 +247,6 @@ header a:hover {
     object-fit: cover;
     object-position: top;
 }
-#contact-section-container h3 {
-    margin: 0;
-}
 #contact-section-information {
     display: flex;
     flex-direction: column;
@@ -237,6 +254,9 @@ header a:hover {
     padding: 10px;
     border-radius: 20px;
     background-color: var(--platinum-dark);
-    font-size: 35px;
+    font-size: 25px;
     color: white;
+}
+#contact-section-information a {
+    color: inherit;
 }
