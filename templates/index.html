@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Shevamilano | PRESIDENT UNIVERSITY Informatics Undergraduate</title>
+    <title>Diego Shevamilano | Informatics Undergraduate</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="{{ url_for('static', filename='client.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -27,8 +27,8 @@
 
 <!-- home section -->
 <div id="home-section">
-    <p id="small-about"><strong><span style="color: #D61924;">PRESIDENT</span> <span style="color: #224D84;">UNIVERSITY</span></strong> Informatics Undergraduate</p>
-    <div id="home-section-photo-divider">
+    <p class="fade-in" id="small-about"><strong><span style="color: #D61924;">PRESIDENT</span> <span style="color: #224D84;">UNIVERSITY</span></strong> Informatics Undergraduate</p>
+    <div class="fade-in" id="home-section-photo-divider">
         <div class="home-section-photo" id="home-section-photo-left">
             <img style="height: 450px; width: 280px;" src="{{ url_for('static', filename='images/portfolio-picture2.jpg') }}" alt="">
         </div>
@@ -43,44 +43,44 @@
 <div id="about-section">
     <div id="about-me">
         <div>
-            <p>
+            <p class="fade-in">
                 I'm currently an Informatics undergraduate student at <strong><span style="color: #D61924;">President</span> <span style="color: #224D84;">University</span></strong> with a strong interest in <span style="color: var(--blumine)">web development</span> and <span style="color: var(--blumine)">design</span>.
                 Through various team projects, I've gained valuable experience in key phases of the development process and learned the importance of <span style="color: var(--blumine)">effective teamwork</span>.
             </p>
-            <p>
+            <p class="fade-in">
                 I specialize in building <span style="color: var(--dark-purple)">interactive</span>, <span style="color: var(--dark-purple)">intuitive</span>, and <span style="color: var(--dark-purple)">user-friendly</span> websites.
-                I'm committed to continuously learning and improving my skills as I prepare for future opportunities in the tech industry. In addition, I have experience with <span style="color: var(--blumine)">UI/UX design</span>, <span style="color: var(--blumine)">basic database management</span>, and <span style="color: var(--blumine)">Git version control</span>.
+                I'm committed to continuously learning and improving my skills as I prepare for future opportunities in the tech industry.
             </p>
         </div>
-        <div>
+        <div class="fade-in">
             <img style="height: 370px; width: 270px;" id="about-img" src="{{ url_for('static', filename='images/portfolio-picture1.jpg') }}" alt="">
             <span style="text-align: center; margin-top: 5px; color: white; font-size: small;">PUNTEN Database Planning - 13/03/24</span>
         </div>
     </div>
     <!-- skills section -->
     <div class="skills-section-competencies">
-        <h1>Capabilities</h1>
+        <h1 class="fade-in">Capabilities</h1>
         <div>    
-            <span>Web Development and Design</span>
-            <span>UI/UX Design</span>
-            <span>Basic Database Management</span>
-            <span>Git Version Control</span>
-            <span>Cybersecurity Fundamentals</span>
+            <span class="fade-in">Web Development and Design</span>
+            <span class="fade-in">UI/UX Design</span>
+            <span class="fade-in">Basic Database Management</span>
+            <span class="fade-in">Git Version Control</span>
+            <span class="fade-in">Cybersecurity Fundamentals</span>
         </div>
     </div>
 </div>
 
 <!-- portfolio section -->
 <div id="portfolio-section">
-    <h1 style="margin-bottom: 80px; text-align: center;">Past Projects</h1>
+    <h1 class="fade-in" style="margin-bottom: 80px; text-align: center;">Past Projects</h1>
     <div class="projects">
-        <h2 style="margin: 0 0 10 0;">President University Economic Survival Business Project</h2>
+        <h2 class="fade-in" style="margin: 0 0 10 0;">President University Economic Survival Business Project</h2>
         <div class="portfolio-section-project portfolio-section-project-multipic">
-            <div class="portfolio-section-project-multipic-img">
+            <div class="portfolio-section-project-multipic-img fade-in">
                 <img src="{{ url_for('static', filename='images/punten-logo.jpg') }}" alt="">
                 <img style="width: 840px;" src="{{ url_for('static', filename='images/punten-banner.jpg') }}" alt="">
             </div>
-            <div class="portfolio-section-project-description">
+            <div class="portfolio-section-project-description fade-in">
                 <p>
                     PUNTEN is a fully functional mobile web application developed for the President University Economic Survival Business Project Competition 2024. This project won 1st place in the Application category
                 </p>
@@ -92,15 +92,37 @@
 <!-- contact section -->
  <div id="contact-section">
     <div id="contact-section-container">
-        <img id="contact-img" src="{{ url_for('static', filename='images/portfolio-picture.jpg') }}" alt="">
-        <div id="contact-section-information">
+        <img class="fade-in" id="contact-img" src="{{ url_for('static', filename='images/portfolio-picture.jpg') }}" alt="">
+        <div class="fade-in" id="contact-section-information">
             <span style="font-size: 20px;">Contact</span>
             <h3><strong>DIEGO SHEVAMILANO</strong></h3>
             <span style="color: var(--cyan);">business.email@email.com</span>
-            <span style="color: var(--cyan);">number</span>
-            <span style="color: var(--cyan);">LinkedIn Profile Link</span>
+            <!-- <span style="color: var(--cyan);">number</span> -->
+            <a href="https://www.linkedin.com/in/diego-shevamilano-65608028b/" style="color: var(--cyan);">LinkedIn</a>
         </div>
     </div>
 </div>
+
+<script>
+$(document).ready(function () {
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                $(entry.target).addClass("visible");
+            } else {
+                $(entry.target).removeClass("visible");
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    $(".fade-in").each(function () {
+        observer.observe(this);
+    });
+});
+</script>
+
+
 </body>
 </html>

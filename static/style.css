@@ -29,6 +29,24 @@ img {
     border-radius: 20px;
 }
 
+/* Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Header */
 div#header {
     position: sticky;
@@ -37,6 +55,7 @@ div#header {
     box-sizing: border-box;
     width: 100%;
     font-size: smaller;
+    z-index: 1;
 }
 header {
     display: flex;
@@ -87,6 +106,8 @@ header a:hover {
 .home-section-photo img {
     border-radius: 20px;
 }
+/* #home-section-photo-left {
+} */
 #home-section-photo-right {
     display: flex;
     flex-direction: column;
