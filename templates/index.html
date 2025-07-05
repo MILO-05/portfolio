@@ -84,14 +84,24 @@
 
 <!-- home section -->
 <div id="home-section">
-    <p class="fade-in" id="small-about"><strong><span style="color: #D61924;">PRESIDENT</span> <span style="color: #224D84;">UNIVERSITY</span></strong> Informatics Undergraduate</p>
-    <div class="fade-in" id="home-section-photo-divider">
-        <div class="home-section-photo" id="home-section-photo-left">
-            <img style="height: 450px; width: 280px;" src="{{ url_for('static', filename='images/portfolio-picture2.jpg') }}" alt="">
+    <!-- <p class="fade-in" id="small-about"><strong><span style="color: #D61924;">PRESIDENT</span> <span style="color: #224D84;">UNIVERSITY</span></strong> Informatics Undergraduate</p> -->
+    <div class="fade-in" id="home-section-divider">
+        <div id="home-section-divided-left">
+            <img class="fade-in" id="about-img" src="{{ url_for('static', filename='images/self-picture.png') }}" alt="">
         </div>
-        <div class="home-section-photo" id="home-section-photo-right">
-            <img style="width: 600px; height: 340px;" src="{{ url_for('static', filename='images/portfolio-picture3.jpg') }}" alt="">
-            <span style="text-align: center; margin-top: 5px; color: white; font-size: small;">President University Economic Survival Business Project Exhibition - 08/05/24</span>
+        <div id="home-section-divided-right">
+            <h1>DIEGO SHEVAMILANO</h1>
+            <p id="home-titles">
+                <span style="color: var(--dark-purple);">|</span>
+                Web Developer and Design 
+                <span style="color: var(--dark-purple);">|</span> 
+                Informatics Undergraduate at 
+                <span style="color: #D61924;">PRESIDENT</span> <span style="color: #224D84;">UNIVERSITY</span></strong> 
+                <span style="color: var(--dark-purple);">|</span></p>
+            <div id="home-welcome">
+                <p>Hi and welcome to my portfolio!</p>
+                <p>Scroll down to learn more about me!</p>
+            </div>
         </div>
     </div>
 </div>
