@@ -173,26 +173,29 @@ header a {
 }
 /* Capabilities Section */
 #capabilities-section {
-    padding: 30px;
-    background-color: var(--matte-black);
-}
-.capabilities-section-competencies {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
 }
-.capabilities-section-competencies h1 {
-    color: var(--platinum);
+#capabilities-section h1 {
+    color: var(--blumine);
     margin: 0;
 }
-.capabilities-section-competencies div {
+#capabilities-section div {
     display: flex;
     flex-direction: column;
 }
-.capabilities-section-competencies span {
+#capabilities-section span {
     color: white;
     text-align: left;
     line-height: 1.8;
-    /* font-size: 30px; */
+    font-size: 25px;
+    transition: color 0.5s ease, transform 0.3s ease;
+}
+.capabilities:hover {
+    color: var(--dark-purple);
+    transform: translateX(20px);
 }
 
 /* Skills Section */
