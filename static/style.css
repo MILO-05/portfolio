@@ -215,7 +215,6 @@ header a {
 }
 #skills-section-list {
     justify-content: center;
-    color: white;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -232,11 +231,15 @@ header a {
     gap: 20px;
     border-radius: 20px;
     align-items: center;
-    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
 }
 .skills:hover {
-    background-color: var(--dark-purple);
+    background-color: var(--carnation-farida);
     transform: scale(1.03);
+    color: white;
+}
+.skills:hover img {
+    filter: brightness(0) invert(1);
 }
 .skills > div {
     display: flex;
@@ -247,15 +250,17 @@ header a {
     border-radius: 20px;
 }
 .skills > div > img {
-    align-items: center;
     width: 200px;   
     height: 200px;
     border-radius: 20px;
+    transition: filter 0.5s ease;
 }
 .skills > p {
     font-family: 'Roboto', sans-serif;
     color: inherit;
-    font-size: 20px;
+    font-size: 30px;
+    transition: color 0.5s ease;
+    font-weight: bold;
     margin: 0;
 }
 
