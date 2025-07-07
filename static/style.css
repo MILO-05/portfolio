@@ -132,6 +132,7 @@ header a {
     flex-direction: column;
     color: white;
     font-family: 'Roboto', sans-serif;
+    width: fit-content;
     gap: 10px;
 }
 #home-section-divided-right h1, p {
@@ -140,8 +141,21 @@ header a {
 #home-section-divided-right h1 {
     font-size: 50px;
 }
-#home-section-divided-right p#home-titles {
-    font-size: 15px;
+#home-section-divided-right a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: inherit;
+}
+#home-section-divided-right a svg {
+    vertical-align: middle;
+}
+#home-section-divided-right .home-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#home-section-divided-right .home-titles p {
+    font-size: 20px;
 }
 #home-section-divided-right #home-welcome {
     margin-top: 10px;
