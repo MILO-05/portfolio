@@ -186,7 +186,7 @@ header a {
     display: flex;
     flex-direction: column;
 }
-#capabilities-section span {
+.capabilities {
     color: white;
     text-align: left;
     line-height: 1.8;
